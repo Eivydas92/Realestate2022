@@ -2,11 +2,14 @@
   "name": "estate2022",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Eivydas92.github.io/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.4",
@@ -25,6 +28,7 @@
   },
   "devDependencies": {
     "eslint": "8.19.0",
-    "eslint-config-next": "12.2.2"
+    "eslint-config-next": "12.2.2",
+    "gh-pages": "^4.0.0"
   }
 }
